@@ -19,7 +19,11 @@ export const Word = ({ id, label, isSelected, type, onPress }: WordType) => {
   };
 
   return (
-    <Button backgroundColor={bgColor} color={textColor} onPress={handlePress}>
+    <Button
+      backgroundColor={bgColor}
+      color={textColor}
+      onPress={handlePress}
+      pressStyle={{ backgroundColor: '$color.yellow12Dark' }}>
       {label}
     </Button>
   );
